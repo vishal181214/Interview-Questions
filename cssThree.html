@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssThree</title>
+    <link rel="stylesheet" href="three.css">
+</head>
+<body>
+    <h3>1. Create masterhead - add background image and put a text at the center , with button below it</h3> 
+    
+        <header>
+            <div class="logo">
+                <img src="./logoPrepBytes.svg" alt="">
+            </div>
+            <div class="cont">
+                <h1>PrepBytes</h1>
+                <button class="btnn">Know More</button>
+            </div>
+        </header>
+    <h3>2. Create header -- left side will have logo and right side will have 4 button</h3> 
+    
+    <header class="left">
+        <div class="logo">
+            <img src="./logoPrepBytes.svg" alt="">
+        </div>
+        <div class="buttons">
+            <button class="bttn">About</button>
+            <button class="bttn">Explore</button>
+            <button class="bttn">Contact</button>
+            <button class="bttn">Home</button>
+        </div>
+    </header>
+    <h3>3. Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view</h3>
+    
+        <div class="box">
+            <div class="card">Card1</div>
+            <div class="card">Card2</div>
+            <div class="card">Card3</div>
+        </div><br><br>
+    <h3>4. Replicate the button on Masthead of PrepBytes, Change the background color of button for mobile view and ipad</h3>	
+    
+        <button class="btn">Enroll now</button>
+
+    <h3>5. Write code to show implementation of flex</h3>	
+    
+        <div class="show">
+            <div class="code">
+                <pre>
+                    header{
+                        background-image: url(./tt.webp);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        display: flex;
+                        padding: 2%;
+                        text-align: center;
+                    }
+                    
+                    .cont{
+                        margin-left: auto;
+                        margin-right: auto;
+                        color: black;
+                    }
+                    
+                    .btnn{
+                        padding: 5% 12% 5% 12%;
+                        border: none;
+                        border-radius: 5px;
+                        color: chocolate;
+                    }
+                </pre>
+            </div>
+            <div class="out">
+                <div class="box">
+                    <div class="card">Card1</div>
+                    <div class="card">Card2</div>
+                    <div class="card">Card3</div>
+                </div>
+            </div>
+        </div><br><br>
+
+    <h3>6. Show implementation of transition</h3>	
+
+    <div class="show">
+        <div class="code">
+            <pre>
+                .trans{
+                    width: 100px;
+                    height: 100px;
+                    background-color: coral;
+                    border: 2px solid black;
+                    transition: all 5s;
+                }
+                
+                .trans:hover{
+                    width: 300px;
+                    background-color: violet;
+                }
+            </pre>
+        </div>
+        <div class="out">
+            <div class="trans"></div>
+        </div>
+    </div><br>
+        
+        
+    <h3>7. Show implementation of transformation</h3>	
+    
+    <div class="show">
+        <div class="code">
+            <pre>
+                .transform{
+                    width: 100px;
+                    height: 100px;
+                    background-color: coral;
+                    border: 2px solid black;
+                    transition: all 5s;
+                    transform: rotate(60deg);
+                }
+                
+                .transform:hover{
+                    transform: rotate(150deg);
+                }
+            </pre>
+        </div>
+        <div class="out">
+            <div class="transform">Transform</div>
+        </div>
+    </div><br>
+
+    <h3>8. Show implementation of grid</h3>
+    
+    <div class="show">
+        <div class="code">
+            <pre>
+                .box{
+                    width: 100%;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    justify-content: space-evenly;
+                }
+                
+                .card{
+                    width: 200px;
+                    height: 200px;
+                    border: 2px solid black;
+                    align-items: center;
+                    text-align: center;
+                }                
+            </pre>
+        </div>
+        <div class="out">
+            <div class="box">
+                <div class="card">Card1</div>
+                <div class="card">Card2</div>
+                <div class="card">Card3</div>
+            </div>
+        </div>
+    </div><br><br>
+
+    <h3>9. What are CSS combinators</h3> 	
+    
+        <p>In css, A combinator is something that explains the relationship between the selectors.</p>
+        There are four different combinators in CSS:
+        <dl>
+            <dt>descendant selector (space)</dt>
+            <dd>The descendant selector matches all elements that are descendants of a specified element.</dd><br>
+            <dt>child selector (>)</dt>
+            <dd>The child selector selects all elements that are the children of a specified element.</dd><br>
+            <dt>adjacent sibling selector (+)</dt>
+            <dd>The adjacent sibling selector is used to select an element that is directly after another specific element.</dd><br>
+            <dt>general sibling selector (~)</dt>
+            <dd>The general sibling selector selects all elements that are next siblings of a specified element.</dd><br>
+          </dl><br>
+          
+    <h3>10. What are pseudo selectors in CSS</h3>
+    
+          <p>In css, pseudo-classes are used to add styles to selectors, but only when those selectors meet certain conditions.</p>
+          <p>Example:-</p>
+          <dl>
+            <dt>:focus</dt>
+            <dd>Selects the input element that has focus</dd><br>
+            <dt>:hover</dt>
+            <dd>Selects links on mouse over</dd><br>
+            <dt>:first-child</dt>
+            <dd>Selects every <p> elements that is the first child of its parent</dd><br>
+            <dt>:last-child</dt>
+            <dd>Selects every <p> elements that is the last child of its parent</dd><br>
+            <dt>:nth-child(n)/dt>
+            <dd>Selects every <p> element that is the second child of its parent</dd><br>
+            <dt>::after</dt>
+            <dd>Insert content after every p element</dd><br>
+            <dt>::before</dt>
+            <dd>Insert content before every p element</dd><br>
+          </dl>
+</body>
+</html>

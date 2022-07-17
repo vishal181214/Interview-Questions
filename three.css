@@ -1,0 +1,193 @@
+body{
+    font-size: 100%;
+}
+header{
+    background-image: url(./tt.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 2%;
+    text-align: center;
+}
+
+.cont{
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.btnn{
+    padding: 5% 12% 5% 12%;
+    border: none;
+    border-radius: 5px;
+    color: chocolate;
+}
+
+.left{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bttn{
+    width: 20%;
+    padding: 2% 5% 2% 5%;
+    border: none;
+    border-radius: 5px;
+    color: chocolate;
+}
+
+.bttn:hover{
+    background-color: transparent;
+}
+
+.box{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+}
+
+.btn{
+    background: #00a5ec 0 0 no-repeat padding-box;
+    border: none;
+    padding: 12px 52px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 21px;
+}
+
+.show{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.code{
+    width: 30%;
+    height: auto;
+}
+
+.out{
+    width: 80%;
+    height: auto;
+}
+.trans{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border: 2px solid black;
+    transition: all 5s;
+}
+
+.trans:hover{
+    width: 300px;
+    background-color: violet;
+}
+
+.transform{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border: 2px solid black;
+    transition: all 5s;
+    transform: rotate(60deg);
+}
+
+.transform:hover{
+    transform: rotate(150deg);
+}
+
+@media screen and (max-width:800px) {
+    
+    body{
+        font-size: 80%
+    };
+    
+    header{
+        background-image: url(./tt.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        padding: 2%;
+        text-align: center;
+    }
+    
+    .cont{
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+    }
+    
+    .btnn{
+        padding: 5% 12% 5% 12%;
+        border: none;
+        border-radius: 5px;
+        color: chocolate;
+    }
+    
+    .left{
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .buttons{
+        width: 50%;
+        display: flex;
+    }
+    .bttn{
+        margin-left: 2%;
+        width: 25%;
+        padding: 2% 0%;
+        border: none;
+        border-radius: 5px;
+        color: chocolate;
+    }
+    
+    .bttn:hover{
+        background-color: transparent;
+    }
+    
+    .box{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: space-evenly;
+        row-gap: 2%;
+    }
+    
+    .card{
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn{
+        background: #7437d6 0 0 no-repeat padding-box;
+        border: none;
+        padding: 12px 52px;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 21px;
+    }
+}

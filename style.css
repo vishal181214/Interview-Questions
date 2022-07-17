@@ -1,0 +1,56 @@
+.btn{
+    background: #00a5ec 0 0 no-repeat padding-box;
+    border: none;
+    padding: 12px 52px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 21px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Amatic+SC&family=Anek+Latin:wght@500;600&family=Barlow:wght@100&family=Fjalla+One&family=Gruppo&family=Lexend+Zetta:wght@100&family=Poiret+One&family=Rajdhani:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+.lik{
+    font-family: 'Oswald', sans-serif;
+}
+
+.imprt{
+    font-family: 'Pacifico', cursive;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    transition: 4s linear;
+}
+
+.box:hover{
+    width: 500px;
+    height: 100px;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: darkcyan;
+    border-radius: 50%;
+}
+
+.animat{
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+    animation: animi 10s infinite linear;
+    margin-left: 100px;
+}
+
+@keyframes animi {
+    0%{transform: rotate(30deg);border-radius: 10%;}
+    25%{transform: rotate(90deg);background-color: cadetblue;border-radius: 20%;}
+    50%{transform: rotate(180deg);background-color: chocolate;border-radius: 30%;}
+    75%{transform: rotate(270deg);background-color: violet;border-radius: 40%;}
+    100%{transform: rotate(360deg);background-color: tomato;border-radius: 50%;}
+}
